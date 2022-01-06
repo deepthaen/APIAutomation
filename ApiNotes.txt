@@ -1,0 +1,320 @@
+API ::
+
+what is Api ?
+    Application programing interface
+    Application - any project or service or server
+    Programming - where we write logical code
+    Interface -- integrating 2 peace of codes or multiple peaces
+
+   UI - SOM APP - OMS
+   UI - application
+   APP - Programing
+   Interface - UI to APP to OM to APP to UI
+
+   client  -- UIi based application
+   Server -- anything running in background
+
+   Wahtsapp - client based or server based
+   HDFC -
+
+
+   MAc - Windows - Linux
+    Mac- give location
+    windows - give location
+    linux- give location
+         i need common connecting point- tat is server -
+          i need common langugae to understand - http
+
+   Http ::
+    Hyper text transfer protocal
+    hyper - regular expression
+    text - plain syntax
+    transfer -
+    protocol - packet or netowrks
+
+    https://wwww.som.ajio.com - Domain Name
+        wwww.som.ajio.com --> 10.21.127.87 and 88 and 101
+
+    10.21.127.87 -- this is private and static  which compoany buying
+
+    Chrome
+        --> www.som.ajio.com/login(user,pass)
+        -> broadband
+        --> (DNS)
+        -> 10.21.127.87
+        -> SOM server(Linux - Apcahe tomcat)
+        -> SOM APP /dasboasrd/v1/login(user,pass)
+            Internal it will run a logic
+            it has logic
+        -> response (success,failure)
+
+    Http and https
+
+    Http - palin transfer information
+    https :: secured way of transer
+                there are different ways of security
+
+    Login featur
+        username - 8044
+        password- 8044
+        login button -> UI will call an API(SOM APP)
+                SOM app should be running
+                    if it s running it will find with tat pai is present in Backend
+                    If present - it will run logic insode
+                    Return response
+
+   Pre request fo API
+    Rest Assured
+    Web Service(SOAP)
+    WSDL
+
+
+    Rest Assured Pre request ::
+        Http  and https
+        JSON - Java script Object notation
+        Object
+        Array
+        Http Methods - CRUD
+            POST, GET, PUT, PATCH, DELETE, UPDATE, TRUNCATE
+        Parameters
+        Headers
+        Body
+         Response headers
+         Response Body
+         Response code
+           100, 200, 300, 400,500
+         Secutity types
+            Authorization
+            Authentication
+            OAuth
+            Auth
+            JWT
+            Bas64
+
+Client and sever ::
+    client will interact with server
+
+    AJIO.co -- cancelling
+
+    Cockpit(Cancel) - AJIO (Cancel) - Sterling - SOM - External vendor(NETMEDS)
+    Two things ::
+        Consume - i will request
+        Produce - i will provide
+
+    Produce ::
+        CRETAE Shipment - OMS - SOM - NETMEDS
+    Consume ::
+        PAck shipment  - NTMEDS - SOM to OMS
+
+HTTP :; Hyper text tranfer protocal
+JSON - Java script object natation
+REST :: Representation state transfer
+SOAP - simple object access protocol
+
+REST ::
+    -- client and server
+    -- Cache
+    -- interface
+    -- Programing to handle request response
+    -- it interacts only with JSON
+    -- light weight
+
+
+SOAP ::
+    -- it interact with XML based
+    -- Coding using WSDL
+    -- strong messaging framework
+    --xsd and unmarshel and marshel mapping
+
+Methods :
+    GET -- when we want to fetch info
+    POST -- when we create a new entry
+    PUT -- create entry and replace also
+    PATCH -- appened
+    UPDATE -- update info to exisiting
+    DELETE --
+    TRUNCATE --
+
+JSON ::
+    {} - object
+    [] - array or list
+    -- it handles only key value pairs
+    -- easy to naviaget
+
+    SINGLE OBEJCT
+    {
+        "NAME":"DEEPTHA",
+        "AGE":"16
+    }
+
+     Nested Object :
+      {
+        "data":{
+                "name:deeptha"
+                },
+                {
+                "name":hari"
+                }
+        }
+
+      }
+
+      Object with array::
+
+      {
+        "studentslist"[
+            "name":"deeptha"
+        ]
+      }
+
+ GET ::
+    /dasboard/v1/get_api/orders?store_node=8044
+
+    -- base url -- 10.21.127.87:8070
+    -- end point--/dasboard/v1/get_api/orders
+    -- parameter
+            its stores in hashmap
+            "storenode":"8084"
+    -- headers
+            "content-type":"application/json"
+    -- query params
+            it stores in hasmap
+    -- Method - GET
+    -- Response headers -
+    -- response code - 200,201,500,400,
+    -- response body -- message to be displayed
+
+Post ::
+      /sellerInventoryView/fetchDashboardView
+
+      -- baseUrl -- 10.21.127.:8071
+      -- end point - /sellerInventoryView/fetchDashboardView
+      -- params
+          stroe_node = 8044
+      -- header
+           Authorzation: Bearer Toke
+      -- Mehtod - POST
+      -- Request
+           JSON
+             -- {
+             "name": "Deeptha",
+             "COmpany"[
+             "id":1
+             ]
+             }
+
+      -- Response header -
+          its hashmap
+           xauthToken : "8345834hwhjsdhfj88333829"
+      -- response code - 200, 201, 400
+      -- response body -- message to be dispaly
+            - Json or message
+Put ::
+     /sellerInventoryView/fetchDashboardView
+
+      -- baseUrl -- 10.21.127.:8071
+      -- end point - /sellerInventoryView/fetchDashboardView
+      -- params
+          stroe_node = 8044
+      -- header
+           Authorzation: Bearer Toke
+      -- Mehtod - POST
+      -- Request
+           JSON
+             -- {
+             "name": "Deeptha",
+             "COmpany"[
+             "id":1
+             ]
+             }
+
+      -- Response header -
+          its hashmap
+           xauthToken : "8345834hwhjsdhfj88333829"
+      -- response code - 200, 201, 400
+      -- response body -- message to be dispaly
+            - Json or message
+
+PATCH ::
+    /sellerInventoryView/fetchDashboardView
+
+      -- baseUrl -- 10.21.127.:8071
+      -- end point - /sellerInventoryView/fetchDashboardView
+      -- params
+          stroe_node = 8044
+      -- header
+           Authorzation: Bearer Toke
+      -- Mehtod - POST
+      -- Request
+           JSON
+             -- {
+             "name": "Deeptha",
+             "COmpany"[
+             "id":1
+             ]
+             }
+
+      -- Response header -
+          its hashmap
+           xauthToken : "8345834hwhjsdhfj88333829"
+      -- response code - 200, 201, 400
+      -- response body -- message to be dispaly
+            - Json or message
+
+DELETE ::
+
+Status Codes ::
+
+    1xx - information
+    2xx - success
+    3xx - redirect
+    4xx - client side
+    5xx - server side
+
+    200 - success ok
+    201 - success with no response
+    304 - not modified
+    400 - bad request
+    401- unautherised
+    404 - method not found
+    500 - internal server error
+    502 - bad gateway
+    504 - gateway timeout
+    503 - service un avialble
+
+Api Automarion ::
+    Restassured library io.rest/jayway/rest
+    jesery libraary
+    http client
+    mocha
+    karate
+
+    1. how to build request
+    2. how to send request
+    3. prepare headers
+    prepare parameters
+    prepare forma data
+    prepare query params
+    prepare request body
+        palin string
+        pojo
+        form data
+        url encoded
+
+    methods enum
+    response codes
+    response reading
+    assertions
+    token mangement
+    barer,oauth,auth
+    checksum
+    file dowload
+    file uplaod
+
+Dependencies required ::
+    io.restassured
+    lombok
+    Gson - for converstion from object to string and string to object
+    resteasy - to handle multi part
+    org.json - read response body to json format
+=====

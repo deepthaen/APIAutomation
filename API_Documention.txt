@@ -1,0 +1,79 @@
+API --
+	Application Programming Interface
+
+- communication and data exchange between two separate software systems.
+- check the functionality, reliability, performance, and security of the
+   programming interfaces.
+
+RestFull API's -- Representational state transfer (REST)
+        - It transfer data in specific format and transfer http calls
+        - architectural style
+        - Its Stateless
+        - Simple compared SOAP
+        - Can used in SOAP
+        - There is no set of standard rules
+        - Restricted based on Mobile and Web Devices
+        - Its helpful for synchronization process
+
+WebServices(Soap UI) -- simple Object Access protocol
+	    - standard communication protocol
+        - exchange XML Bases message
+        -Less Plumbing code
+	    - Set of rules to define message, binding operations and location services
+	     - Its asynchronization
+
+Topics In Rest Api’s ::
+ - http and https
+
+ - Rest Api vs WebServices
+
+ - Http methods
+       - GET
+       - POST
+       - PUT
+       - DELETE
+       - UPDATE
+
+  - OPTIONS
+
+ - Base URL and end points
+
+   response code -
+        - 1XX - Information
+        - 2XX - Success
+        - 3XX - further actions
+        - 4XX - client error
+        - 5XX - Server
+
+ - Authorization
+     - Basic Auth
+     - No Auth
+     - OAuth 1.0
+     - OAuth 2.0
+
+ - Parameters and Query parameters
+        - Always Key Val
+
+ - Headers
+     - Content type
+     - No cache
+     - Cache control
+     - Accept
+     - Accept Language
+     - X requested with
+     - X-api-key
+     - Proxy_Authorization
+
+ - Request Body
+      - Form Data
+      - raw
+      - x-www-urlencoded
+      - binary
+
+ - Response Body
+       - Response header
+            - JSON
+                 - Json Object
+                 - Json Array
+                 - Json Structure
+                 - Json Nested Traverse
